@@ -12,15 +12,15 @@ jobs :
     - name : Download Ngrok.
       run : |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/AdityaGans2542/AdityaRDP/main/start.bat -OutFile start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/AdityaGans2542/AdityaRDP/main/wallpaper.png -OutFile wallpaper.png
-        Invoke-WebRequest https://raw.githubusercontent.com/AdityaGans2542/AdityaRDP/main/wallpaper.bat -OutFile wallpaper.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/AdityaGans2542/AdityaRDP/main/loop.bat -OutFile loop.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/RTunesBangla/irev01/main/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/RTunesBangla/irev01/main/wallpaper.png -OutFile wallpaper.png
+        Invoke-WebRequest https://raw.githubusercontent.com/RTunesBangla/irev01/main/wallpaper.bat -OutFile wallpaper.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/RTunesBangla/irev01/main/loop.bat -OutFile loop.bat
     - name : Download Launcher.
       run : |
-        Invoke-WebRequest https://raw.githubusercontent.com/AdityaGans2542/AdityaRDP/main/launcher/Node.js.lnk -OutFile Node.js.lnk
-        Invoke-WebRequest https://raw.githubusercontent.com/AdityaGans2542/AdityaRDP/main/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
-        Invoke-WebRequest https://github.com/AdityaGans2542/AdityaRDP/raw/main/launcher/Ganti%20Password.exe -OutFile "Change Password.exe"
+        Invoke-WebRequest https://raw.githubusercontent.com/RTunesBangla/irev01/main/launcher/Node.js.lnk -OutFile Node.js.lnk
+        Invoke-WebRequest https://raw.githubusercontent.com/RTunesBangla/irev01/main/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
+        Invoke-WebRequest https://github.com/RTunesBangla/irev01/raw/main/launcher/Ganti%20Password.exe -OutFile "Change Password.exe"
     - name : Extract Ngrok File.
       run : Expand-Archive ngrok.zip
     - name : Connect To Ngrok Account.
